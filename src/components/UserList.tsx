@@ -1,8 +1,6 @@
 import { FC, useEffect } from "react"
-import { useDispatch } from "react-redux"
 import { useUserActions } from "../hooks/useActions"
 import { useTypedSelector } from "../hooks/useTypedSelector"
-import { fetchUsers } from "../redux/action-creators/userActions"
 
 const UserList: FC = () => {
     const { users, error, loading } = useTypedSelector((state) => state.User)
