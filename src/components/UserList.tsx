@@ -1,5 +1,5 @@
 import { FC, useEffect } from "react"
-import { useUserActions } from "../hooks/useActions"
+import { useActions } from "../hooks/useActions"
 import { useTypedSelector } from "../hooks/useTypedSelector"
 
 const UserList: FC = () => {
@@ -7,7 +7,7 @@ const UserList: FC = () => {
     // (!) Вместо этого --> const dispatch = useDispatch()
     //     используем кастомный хук
 
-    const { fetchUsers } = useUserActions()
+    const { fetchUsers } = useActions()
 
     useEffect(() => {
         fetchUsers()

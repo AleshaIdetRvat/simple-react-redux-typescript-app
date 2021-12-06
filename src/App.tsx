@@ -1,9 +1,12 @@
+import { TodoList } from "./components/TodoList"
 import { UserList } from "./components/UserList"
 
 function App() {
     return (
         <div className='app'>
-            <UserList />
+            <TodoList />
+            <hr />
+            {/* <UserList /> */}
         </div>
     )
 }

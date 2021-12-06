@@ -3,7 +3,7 @@ import { TodoAction, TodoActionTypes } from "../../types/todoTypes"
 
 const apiURL = "https://jsonplaceholder.typicode.com/todos"
 
-const fetchUsers =
+const fetchTodos =
     (page: number, limit: number) => async (dispatch: Dispatch<TodoAction>) => {
         try {
             dispatch({ type: TodoActionTypes.FETCH_TODOS })
@@ -28,4 +28,4 @@ const setTodosPage = (page: number): TodoAction => ({
     payload: page,
 })
 
-export { fetchUsers, setTodosPage }
+export { fetchTodos, setTodosPage }
